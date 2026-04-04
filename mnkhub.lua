@@ -38,10 +38,11 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Auto Sell Every"] = 1000, -- Will auto sell every 1000 Fish Caught
     },
     ["Weather"] = {
-        ["Auto Buying"] = false,
-        ["Minimum Rod"] = "Astral Rod", -- Minimum rod for start buy weather
-        ["Weather List"] = { -- Weather list
-            "Wind" "Strom" "Cloudy",
+        ["Auto Buying"] = true,
+        ["Minimum Rod"] = "Astral Rod",
+        ["Weather List"] = {
+            "Wind", "Storm", "Cloudy", -- Sudah diperbaiki komanya
+        },
     },
     ["Totems"] = {
         ["Auto Use"] = true,
