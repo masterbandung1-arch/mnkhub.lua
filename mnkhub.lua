@@ -1,3 +1,19 @@
+_G.FishItConfig = _G.FishItConfig or {
+    ["Fishing"] = {
+        ["Auto Perfect"] = false,
+        ["Random Result"] = false,
+        ["Auto Favorite"] = true,
+        ["Auto Unfavorite"] = false,
+        ["Fish Name"] = {
+            "Sacred Guardian Squid",
+            {Name = "Ruby", Variant = "Gemstone"},
+            {Variant = "Leviathan Rage"},
+            {Tier = "Secret", Variant = "Leviathan Rage"},
+        },
+        ["Auto Accept Trade"] = false,
+        ["Auto Friend Request"] = false,
+    },
+
 local Settings = {
     ["Rod List"] = {
         ["Auto Buying"] = true,
@@ -16,21 +32,6 @@ local Settings = {
             ["Treasure Room"] = {"Element Rod", "Ghostfinn Rod", "Angler Rod", "Ares Rod"},
         },
         ["Endgame"] = "",
-    },
-
-    ["Fishing"] = {
-        ["Auto Perfect"] = true,
-        ["Random Result"] = false,
-        ["Auto Favorite"] = true,
-        ["Auto Unfavorite"] = false,
-        ["Fish Name"] = {
-            "Sacred Guardian Squid",
-            {Name = "Ruby", Variant = "Gemstone"},
-            {Variant = "Leviathan Rage"},
-            {Tier = "Secret", Variant = "Leviathan Rage"},
-        },
-        ["Auto Accept Trade"] = false,
-        ["Auto Friend Request"] = false,
     },
 
     ["Selling"] = {
