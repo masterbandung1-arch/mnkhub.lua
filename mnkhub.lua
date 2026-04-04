@@ -2,7 +2,6 @@ _G.FishItConfig = _G.FishItConfig or {
     ["Fishing"] = {
         ["Auto Perfect"] = true, -- Auto Perfect Fishing
         ["Random Result"] = false, -- Random Result Fishing
-
         ["Auto Favorite"] = true, -- Auto Favorite Fish on List
         ["Auto Unfavorite"] = false, -- Auto Unfavorite Fish not on the List
         ["Fish Name"] = {
@@ -31,7 +30,6 @@ _G.FishItConfig = _G.FishItConfig or {
         },
         ["Endgame"] = "", -- For custom select rod when all items acquired
     },
-
     ["Selling"] = {
         ["Auto Sell"] = true,
         ["Auto Sell Threshold"] = "Legendary", -- Legendary, Mythic threshold sell only
