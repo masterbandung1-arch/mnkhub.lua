@@ -2,6 +2,7 @@ _G.FishItConfig = _G.FishItConfig or {
     ["Fishing"] = {
         ["Auto Perfect"] = true, -- Auto Perfect Fishing
         ["Random Result"] = false, -- Random Result Fishing
+        
         ["Auto Favorite"] = true, -- Auto Favorite Fish on List
         ["Auto Unfavorite"] = false, -- Auto Unfavorite Fish not on the List
         ["Fish Name"] = {
@@ -10,6 +11,7 @@ _G.FishItConfig = _G.FishItConfig or {
             {Variant = "Leviathan Rage"}, -- Variant Only
             {Tier = "Secret", Variant = "Leviathan Rage"},  -- Tier + Variant
         },
+        
         ["Auto Accept Trade"] = false, -- Auto Accept Trade Request
         ["Auto Friend Request"] = false, -- Auto Friend Request
     },    
