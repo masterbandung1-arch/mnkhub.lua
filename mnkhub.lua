@@ -1,20 +1,170 @@
 _G.FishItConfig = _G.FishItConfig or {
     ["Fishing"] = {
-        ["Auto Perfect"] = true, -- Auto Perfect Fishing
-        ["Random Result"] = false, -- Random Result Fishing
-        
-        ["Auto Favorite"] = true, -- Auto Favorite Fish on List
-        ["Auto Unfavorite"] = false, -- Auto Unfavorite Fish not on the List
+        ["Auto Perfect"] = false,
+        ["Random Result"] = false,
+
+        ["Auto Favorite"] = true,
+        ["Auto Unfavorite"] = false,
         ["Fish Name"] = {
-            "Sacred Guardian Squid", -- Fish Name Only
-            {Name = "Ruby", Variant = "Gemstone"}, -- Fish Name + Variant
-            {Variant = "Leviathan Rage"}, -- Variant Only
-            {Tier = "Secret", Variant = "Leviathan Rage"},  -- Tier + Variant
+            "Sacred Guardian Squid",
+            {Name = "Ruby", Variant = "Gemstone"},
         },
-        
-        ["Auto Accept Trade"] = false, -- Auto Accept Trade Request
-        ["Auto Friend Request"] = false, -- Auto Friend Request
-    },    
+
+        ["Auto Accept Trade"] = true,
+        ["Auto Friend Request"] = true,
+    },
+
+    ["Auto Trade"] = {
+        ["Enabled"] = false,
+        ["Whitelist Username"] = { "" },
+
+        ["Category Fish"] = {
+            "Secret",
+        },
+
+        ["Fish Name"] = {
+            "Sacred Guardian Squid",
+            {Name = "Ruby", Variant = "Gemstone"},
+            {Variant = "Leviathan Rage"},
+        },
+
+        ["Item Name"] = { }, -- FIX: hapus "X" biar ga error
+    },
+
+    ["Farm Coin Only"] = {
+        ["Enabled"] = false,
+        ["Target"] = 190000,
+    },
+
+    ["Selling"] = {
+        ["Auto Sell"] = true,
+        ["Auto Sell Threshold"] = "Legendary",
+        ["Auto Sell Every"] = 50,
+    },
+
+    ["Doing Quest"] = {
+        ["Auto Ghostfinn Rod"] = true,
+        ["Unlock Ancient Ruin"] = false,
+        ["Auto Element Rod"] = false,
+        ["Auto Diamond Rod"] = false,
+
+        ["Allowed Sacrifice"] = {
+            "Ghost Shark",
+            "Cryoshade Glider",
+            "Panther Eel",
+            "Queen Crab",
+            "King Crab",
+            "Giant Squid",
+            "Blob Shark",
+            "Ghost Shark",
+            "King Jelly", 
+            "Mosasaur Shark",
+            "Elshark Gran Maja", 
+            "Bone Whale", 
+            "Gladiator Shark", 
+            "Frostborn Shark",  
+        },
+
+        ["FARM_LOC_SECRET_SACRIFICE"] = "Ocean",
+        ["Minimum Rod"] = "Astral Rod",
+    },
+
+    ["WebHook"] = {
+        ["Link Webhook"] = "",
+        ["Auto Sending"] = false,
+        ["Category"] = {"Secret"},
+        ["Link Webhook Quest Complete"] = "",
+    },
+
+    ["Weather"] = {
+        ["Auto Buying"] = true,
+        ["Minimum Rod"] = "Ghostfinn Rod",
+        ["Weather List"] = {
+            "Cloudy",
+            "Wind",
+            "Snow",
+            "Storm",
+            "Shark Hunt",
+            "Radiant",
+        },
+    },
+
+    ["Potions"] = {
+        ["Auto Use"] = true,
+        ["Minimum Rod"] = "Astral Rod",
+    },
+
+    ["Totems"] = {
+        ["Auto Use"] = true,
+        ["Minimum Rod"] = "Ghostfinn Rod",
+
+        ["Buy List"] = {
+            ["Mutation Totem"] = 100,
+            -- FIX: hapus string kosong " " yang bisa bikin error
+        },
+    },
+
+    ["Event"] = {
+        ["Start Farm"] = false,
+        ["Minimum Rod"] = "Ghostfinn Rod",
+
+        ["Event List"] = {
+            ["Thunderzilla Hunt"] = true,
+            ["Mutant Runic Koi"] = false,
+            ["Ancient Lochness Monster"] = false,
+            ["Megalodon Hunt"] = false,
+        },
+    },
+
+    ["Enchant"] = {
+        ["Auto Enchant"] = true,
+        ["Roll Enchant"] = false,
+        ["Evolved Roll Enchant"] = true,
+
+        ["Enchant List"] = {
+            "SECRET Hunter",
+            "Cursed I",
+        },
+
+        ["Second Enchant"] = true,
+
+        ["Allowed Sacrifice"] = {
+            "Ghost Shark",
+            "Cryoshade Glider",
+            "Panther Eel",
+            "Queen Crab",
+            "King Crab",
+            "Giant Squid",
+            "Blob Shark",
+            "Ghost Shark",
+            "King Jelly", 
+            "Mosasaur Shark",
+            "Bone Whale", 
+            "Gladiator Shark", 
+            "Great Whale", 
+        },
+
+        ["Second Enchant List"] = {
+            "Cursed I",
+            "Perfection",
+            "Mutation Hunter II",
+            "Mutation Hunter III",
+        },
+
+        ["Minimum Rod"] = "Ghostfinn Rod",
+    },
+
+    ["Bait List"] = {
+        ["Auto Buying"] = true,
+        ["Buy List"] = {
+            "Midnight Bait",
+            "Corrupt Bait",
+            "Floral Bait",
+            "Singularity Bait",
+        },
+        ["Endgame"] = "Singularity Bait",
+    },
+
     ["Rod List"] = {
         ["Auto Buying"] = true,
         ["Buy List"] = {
@@ -22,33 +172,28 @@ _G.FishItConfig = _G.FishItConfig or {
             "Midnight Rod",
             "Astral Rod",
             "Ares Rod",
-            "Angler Rod",
         },
-        ["Location Rods"] = { -- Farm location each rods
+
+        ["Location Rods"] = {
             ["Fisherman Island"] = {"Starter Rod"},
-            ["Kohana Volcano"] = {"Grass Rod", "Midnight Rod"},
-            ["Tropical Grove"] = {"Astral Rod", "Fluorescent Rod"},
-            ["Underwater City"] = {"Element Rod", "Diamond Rod", "Angler Rod", "Ares Rod"},
+            ["Kohana Volcano"] = {"Grass Rod"},
+            ["Esoteric Depths"] = {"Astral Rod", "Midnight Rod"},
+            ["Easter Island"] = {"Diamond Rod", "Element Rod", "Ghostfinn Rod"},
         },
-        ["Endgame"] = "", -- For custom select rod when all items acquired
+
+        ["Endgame"] = "Diamond Rod",
     },
-    ["Selling"] = {
-        ["Auto Sell"] = true,
-        ["Auto Sell Threshold"] = "Legendary", -- Legendary, Mythic threshold sell only
-        ["Auto Sell Every"] = 1000, -- Will auto sell every 1000 Fish Caught
-    },
-    ["Weather"] = {
-        ["Auto Buying"] = true,
-        ["Minimum Rod"] = "Astral Rod",
-        ["Weather List"] = {
-            "Wind", "Storm", "Cloudy", -- Sudah diperbaiki komanya
-        },
-    },
-    ["Totems"] = {
-        ["Auto Use"] = true,
-        ["Minimum Rod"] = "Ghostfinn Rod", -- Minimum rod for start buy and use Totems
-        ["Buy List"] = { -- Totem list
-            ["Mutation Totem"] = 5, -- Buy until 5 totems in inventory
+
+    ["ExtremeFpsBoost"] = false,
+    ["UltimatePerformance"] = false,
+    ["Disable3DRender"] = false,
+    ["AutoRemovePlayer"] = true,
+
+    ["AutoReconnect"] = false,
+    ["HideGUI"] = false,
+    ["Debug"] = false,
+    ["EXIT_MAP_IF_DISCONNECT"] = false,
+}
 
 script_key="B9C58C392E7BCBF5C4347FD0C401D3DB";
 
