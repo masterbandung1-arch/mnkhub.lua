@@ -105,8 +105,8 @@ _G.FishItConfig = _G.FishItConfig or {
     },
 
     ["Event"] = {
-        ["Start Farm"] = false,
-        ["Minimum Rod"] = "Ghostfinn Rod",
+        ["Start Farm"] = true,
+        ["Minimum Rod"] = "Diamond Rod",
 
         ["Event List"] = {
             ["Thunderzilla Hunt"] = true,
@@ -145,24 +145,21 @@ _G.FishItConfig = _G.FishItConfig or {
         },
 
         ["Second Enchant List"] = {
-            "Cursed I",
             "Perfection",
-            "Mutation Hunter II",
-            "Mutation Hunter III",
         },
 
-        ["Minimum Rod"] = "Ghostfinn Rod",
+        ["Minimum Rod"] = "Diamond Rod",
     },
 
     ["Bait List"] = {
-        ["Auto Buying"] = true,
+        ["Auto Buying"] = false,
         ["Buy List"] = {
             "Midnight Bait",
             "Corrupt Bait",
             "Floral Bait",
             "Singularity Bait",
         },
-        ["Endgame"] = "Singularity Bait",
+        ["Endgame"] = "Aetherion Bait",
     },
 
     ["Rod List"] = {
@@ -178,7 +175,8 @@ _G.FishItConfig = _G.FishItConfig or {
             ["Fisherman Island"] = {"Starter Rod"},
             ["Kohana Volcano"] = {"Grass Rod"},
             ["Esoteric Depths"] = {"Astral Rod", "Midnight Rod"},
-            ["Underwater City"] = {"Diamond Rod", "Element Rod", "Ghostfinn Rod"},
+            ["Treasure Room"] = {"Element Rod", "Ghostfinn Rod"},
+            ["Underwater City"] = {"Diamond Rod"},
         },
 
         ["Endgame"] = "Diamond Rod",
