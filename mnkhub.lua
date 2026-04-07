@@ -176,7 +176,7 @@ _G.FishItConfig = _G.FishItConfig or {
             ["Kohana Volcano"] = {"Grass Rod"},
             ["Esoteric Depths"] = {"Astral Rod", "Midnight Rod"},
             ["Treasure Room"] = {"Element Rod", "Ghostfinn Rod"},
-            ["Underwater City"] = {"Diamond Rod"},
+            ["Easter Island"] = {"Diamond Rod"},
         },
 
         ["Endgame"] = "Diamond Rod",
