@@ -109,7 +109,7 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Minimum Rod"] = "Diamond Rod",
 
         ["Event List"] = {
-            ["Thunderzilla Hunt"] = true,
+            ["Thunderzilla Hunt"] = false,
             ["Mutant Runic Koi"] = false,
             ["Ancient Lochness Monster"] = false,
             ["Megalodon Hunt"] = false,
