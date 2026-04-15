@@ -12,10 +12,11 @@ _G.FishItConfig = _G.FishItConfig or {
 
         ["Auto Accept Trade"] = true,
         ["Auto Friend Request"] = true,
+        ["Auto Egg Exchange"] = true,
     },
 
     ["Auto Trade"] = {
-        ["Enabled"] = true,
+        ["Enabled"] = false,
         ["Whitelist Username"] = { "sayang_aal5" },
 
         ["Category Fish"] = {
@@ -38,7 +39,7 @@ _G.FishItConfig = _G.FishItConfig or {
 
     ["Selling"] = {
         ["Auto Sell"] = true,
-        ["Auto Sell Threshold"] = "Legendary",
+        ["Auto Sell Threshold"] = "Mythic",
         ["Auto Sell Every"] = 50,
     },
 
@@ -123,7 +124,6 @@ _G.FishItConfig = _G.FishItConfig or {
 
         ["Enchant List"] = {
             "SECRET Hunter",
-            "Cursed I",
         },
 
         ["Second Enchant"] = true,
@@ -182,7 +182,7 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Endgame"] = "Diamond Rod",
     },
 
-    ["ExtremeFpsBoost"] = false,
+    ["ExtremeFpsBoost"] = true,
     ["UltimatePerformance"] = false,
     ["Disable3DRender"] = false,
     ["AutoRemovePlayer"] = true,
