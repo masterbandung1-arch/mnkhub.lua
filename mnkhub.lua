@@ -29,8 +29,9 @@ _G.FishItConfig = _G.FishItConfig or {
             {Variant = "Leviathan Rage"},
         },
 
-        ["Item Name"] = { }, -- FIX: hapus "X" biar ga error
-    },
+        ["Item Name"] = {
+            "Eggy Enchant Stone", -- Item Name
+        },
 
     ["Farm Coin Only"] = {
         ["Enabled"] = false,
