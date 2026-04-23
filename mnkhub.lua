@@ -124,7 +124,6 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Evolved Roll Enchant"] = true,
 
         ["Enchant List"] = {
-            "FORGOTTEN Hunter",
             "SECRET Hunter",
         },
 
