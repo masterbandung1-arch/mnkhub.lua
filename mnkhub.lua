@@ -111,7 +111,7 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Minimum Rod"] = "Diamond Rod",
 
         ["Event List"] = {
-            ["Thunderzilla Hunt"] = false,
+            ["Thunderzilla Hunt"] = true,
             ["Mutant Runic Koi"] = false,
             ["Ancient Lochness Monster"] = false,
             ["Megalodon Hunt"] = false,
@@ -124,6 +124,7 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Evolved Roll Enchant"] = true,
 
         ["Enchant List"] = {
+            "FORGOTTEN Hunter",
             "SECRET Hunter",
         },
 
@@ -177,7 +178,7 @@ _G.FishItConfig = _G.FishItConfig or {
             ["Kohana Volcano"] = {"Grass Rod"},
             ["Esoteric Depths"] = {"Astral Rod", "Midnight Rod"},
             ["Treasure Room"] = {"Element Rod", "Ghostfinn Rod"},
-            ["Easter Cave"] = {"Diamond Rod"},
+            ["Underwatter City"] = {"Diamond Rod"},
         },
 
         ["Endgame"] = "Diamond Rod",
